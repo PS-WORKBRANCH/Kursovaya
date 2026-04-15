@@ -71,88 +71,64 @@ const router = useRouter()
 
 <style scoped>
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
-
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-/* ================================ */
 main {
-    margin: 0 auto;
-    max-width: 2000px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
+  margin: 0 auto;
+  max-width: 2000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
 }
-
 .cover {
-    /* width: 100%; */
-    /* height: 100%; */
-    /* gap: 20px; */
-    min-height: 450px;
-    border-radius: 10px;
-    /* background-repeat: no-repeat; */
-    max-width: 2000px;
-    background-image: url(https://hyperpc.ru/images/product/dynamic/evo/black/gallery/lian-li-dynanic-evo-black-upd-live-photo-01.jpg);
+  min-height: 450px;
+  border-radius: 10px;
+  max-width: 2000px;
+  background-image: url(https://hyperpc.ru/images/product/dynamic/evo/black/gallery/lian-li-dynanic-evo-black-upd-live-photo-01.jpg);
+  background-size: cover;
+  background-position: center;
 }
-
-
 .blur {
-    /* height: 100%; */
-    border-radius: 10px;
-    min-height: 450px;
-    background-color: rgba(3, 7, 10, 0.521);
-    padding: 150px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  border-radius: 10px;
+  min-height: 450px;
+  background-color: rgba(3, 7, 10, 0.521);
+  padding: 150px;
 }
-
 .blur h1 {
-    margin-top: 200px;
+  margin-top: 200px;
 }
-
 .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1024px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1024px;
 }
-
 .card {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 0 auto;
-    width: 250px;
-    max-height: 450px;
-    /* padding: 50px; */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 250px;
+  max-height: 450px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.bg_card {
-    background-image: url(https://dlcdnwebimgs.asus.com/files/media/BEC60034-AC12-40B0-92F5-8A89C51BAFF0/v1/img/ASUS-ROG-Strix-Radeon-RX-560.jpg);
-}
-
 .card img {
-    width: 212px;
+  width: 212px;
 }
-
-
 .podbor {
-    background-image: url(https://avatars.mds.yandex.net/i?id=9fd5e6327546666d006948e34b7841ac_l-3923189-images-thumbs&n=13);
-    background-size: cover;
-    min-width: 2000px;
-    height: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: start;
+  background-size: cover;
+  min-width: 2000px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: start;
 }
 </style>

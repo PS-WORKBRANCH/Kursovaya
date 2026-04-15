@@ -129,238 +129,132 @@ const avgRating = computed(() => subjects.averageRating(chel.value));
 
 <style scoped>
 .product-detail {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
-
 .card {
-    background: var(--bg-card);
-    border-radius: 28px;
-    padding: 24px;
-    box-shadow: var(--shadow-md);
+  padding: 24px;
 }
-
-/* Верхняя строка: картинка, название, цена/кнопка */
 .product-top {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
 }
-
 .card-image {
-    flex: 0 0 180px;
-    height: 180px;
-    border-radius: 20px;
-    overflow: hidden;
+  flex: 0 0 180px;
+  height: 180px;
+  border-radius: 20px;
+  overflow: hidden;
 }
-
 .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 .card-info {
-    flex: 2;
-    min-width: 200px;
+  flex: 2;
+  min-width: 200px;
 }
-
 .card-info h2 {
-    margin: 0;
-    font-size: 1.6rem;
-    background: linear-gradient(135deg, #fff, var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  margin: 0;
+  font-size: 1.6rem;
 }
-
 .price-actions {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
 }
-
 .price {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--button);
-    text-shadow: 0 0 4px rgba(0, 212, 255, 0.3);
-    white-space: nowrap;
+  font-size: 2rem;
+  white-space: nowrap;
 }
-
-.price-actions button {
-    background: var(--button);
-    color: var(--button-text);
-    border: none;
-    border-radius: 40px;
-    padding: 10px 24px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: var(--transition);
-    white-space: nowrap;
-}
-
-.price-actions button:hover {
-    background: var(--button-hover);
-    transform: translateY(-2px);
-}
-
-/* Разделитель */
 .divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    margin: 24px 0 20px 0;
+  margin: 24px 0 20px;
 }
-
-/* Блок описания */
 .product-description h3 {
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-    color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
 }
-
 .product-description p {
-    line-height: 1.6;
-    color: var(--text-secondary);
-    background: rgba(255, 255, 255, 0.03);
-    padding: 16px;
-    border-radius: 20px;
-    font-family: monospace;
-    font-size: 0.95rem;
-    white-space: pre-wrap;
+  line-height: 1.6;
+  padding: 16px;
+  white-space: pre-wrap;
 }
-
-/* Кнопка редактирования (для админа) */
-.card .RouterLink button {
-    margin-top: 20px;
-    background: var(--info);
-    color: white;
-    border: none;
-    border-radius: 40px;
-    padding: 8px 20px;
-    cursor: pointer;
-}
-
-.not-found {
-    text-align: center;
-    padding: 40px;
-}
-
-/* Адаптив */
-@media (max-width: 700px) {
-    .product-top {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .price-actions {
-        align-items: center;
-    }
-
-    .card-info h2 {
-        text-align: center;
-    }
-}
-
 .rating-block {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
 }
-
 .rating-count {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
+  font-size: 0.85rem;
 }
-
 .reviews-section {
-    margin-top: 32px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
 }
-
-.reviews-section h3 {
-    margin-bottom: 20px;
-}
-
 .add-review {
-    background: var(--bg-elevated);
-    padding: 20px;
-    border-radius: 20px;
-    margin-bottom: 24px;
+  padding: 20px;
+  margin-bottom: 24px;
 }
-
 .add-review h4 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
-
 .rating-select {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 }
-
 .rating-select select {
-    width: auto;
-    padding: 6px 12px;
+  width: auto;
+  padding: 6px 12px;
 }
-
 .add-review textarea {
-    width: 100%;
-    margin-bottom: 12px;
+  width: 100%;
+  margin-bottom: 12px;
 }
-
 .review-message {
-    margin-top: 8px;
-    font-size: 0.85rem;
-    color: var(--accent);
+  margin-top: 8px;
+  font-size: 0.85rem;
 }
-
 .reviews-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-
 .review-item {
-    background: var(--bg-elevated);
-    border-radius: 20px;
-    padding: 16px;
+  padding: 16px;
 }
-
 .review-header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
 }
-
-.review-header strong {
-    color: var(--accent);
-}
-
 .review-date {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+  font-size: 0.75rem;
 }
-
-.review-text {
-    margin: 0;
-    line-height: 1.5;
-}
-
 .no-reviews {
+  text-align: center;
+  padding: 30px;
+}
+@media (max-width: 700px) {
+  .product-top {
+    flex-direction: column;
     text-align: center;
-    padding: 30px;
-    background: var(--bg-elevated);
-    border-radius: 20px;
-    color: var(--text-secondary);
+  }
+  .price-actions {
+    align-items: center;
+  }
+  .card-info h2 {
+    text-align: center;
+  }
 }
 </style>

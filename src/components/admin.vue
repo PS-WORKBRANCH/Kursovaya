@@ -114,72 +114,50 @@ function add() {
 
 <style scoped>
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
-
-.container>input,
-.container>button {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px 16px;
-    box-sizing: border-box;
+.container > input,
+.container > button {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  box-sizing: border-box;
 }
-
 .picture {
-    height: 170px;
-    overflow: hidden;
-    background: transparent;
+  height: 170px;
+  overflow: hidden;
+  background: transparent;
 }
-
 .picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
-    width: 100%;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
-
 .SubjectContainer {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
-.picture {
-    height: 170px;
-    overflow: hidden;
+.SubjectContainer > div:last-child {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
-.picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.SubjectContainer>div:last-child {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .success-message {
-    color: var(--accent);
-    background: rgba(139, 93, 246, 0.2);
-    padding: 8px 16px;
-    border-radius: 40px;
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 </style>

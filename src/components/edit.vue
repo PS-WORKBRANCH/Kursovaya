@@ -79,90 +79,39 @@ function edit() {
 
 <style scoped>
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
-
-/* Стили для формы */
 .SubjectContainer input,
 .SubjectContainer button {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px 16px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    font-size: 1rem;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  box-sizing: border-box;
 }
-
-.SubjectContainer input:focus {
-    outline: none;
-    border-color: #42b883;
-    box-shadow: 0 0 0 3px rgba(66, 184, 131, 0.2);
-}
-
-.SubjectContainer button {
-    background-color: #42b883;
-    color: white;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
-}
-
-.SubjectContainer button:hover {
-    background-color: #33a06f;
-}
-
-.SubjectContainer button:active {
-    transform: scale(0.98);
-}
-
-/* Сетка для карточек */
 .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
-    width: 100%;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
 }
-
 .SubjectContainer {
-    background: #1e1d1f;
-
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
-    display: flex;
-    flex-direction: column;
-    border: none;
-    width: 100%;
-    /* Занимает всю ширину ячейки */
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
-.SubjectContainer:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
-}
-
 .picture {
-    height: 170px;
-    overflow: hidden;
-    background: #f8f8f8;
+  height: 170px;
+  overflow: hidden;
 }
-
 .picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

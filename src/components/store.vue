@@ -81,8 +81,6 @@ function totalPrice() {
   padding: 20px;
 }
 .cart-card {
-  background: var(--bg-card);
-  border-radius: 28px;
   padding: 24px;
 }
 .cart-title {
@@ -97,14 +95,7 @@ function totalPrice() {
 .cart-item {
   display: flex;
   gap: 20px;
-  background: var(--bg-elevated);
-  border-radius: 20px;
   padding: 16px;
-  border-left: 4px solid var(--accent);
-  transition: var(--transition);
-}
-.cart-item:hover {
-  transform: translateX(4px);
 }
 .cart-item-img {
   width: 100px;
@@ -121,7 +112,6 @@ function totalPrice() {
 }
 .cart-item-price {
   font-weight: 700;
-  color: var(--button);
   margin: 4px 0;
 }
 .quantity-control {
@@ -131,33 +121,11 @@ function totalPrice() {
   margin-top: 8px;
 }
 .qty-btn {
-  background: var(--button);
-  border: none;
-  color: var(--button-text);
   width: 32px;
   height: 32px;
-  border-radius: 40px;
-  font-weight: bold;
   font-size: 1.2rem;
-  cursor: pointer;
-  transition: var(--transition);
-}
-.qty-btn:hover {
-  background: var(--button-hover);
-}
-.qty-value {
-  font-weight: 600;
-  font-size: 1.1rem;
-  min-width: 30px;
-  text-align: center;
 }
 .remove-btn {
-  background: var(--danger);
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 40px;
-  cursor: pointer;
   align-self: center;
 }
 .cart-total {

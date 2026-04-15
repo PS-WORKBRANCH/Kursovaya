@@ -80,9 +80,6 @@ const router = useRouter()
   padding: 0.75rem 1rem;
   text-align: left;
 }
-.user-row:hover {
-  background: rgba(139, 115, 85, 0.03);
-}
 .number {
   font-weight: 600;
 }

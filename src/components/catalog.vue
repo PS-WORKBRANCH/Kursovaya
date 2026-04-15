@@ -22,15 +22,15 @@ const router = useRouter();
         </div>
         <div>
           <div class="product-name">{{ item?.name }}</div>
-          
+
           <!-- Блок рейтинга -->
           <div class="product-rating">
             <Stars :rating="subjects.averageRating(item)" />
             <span class="reviews-count">({{ item.reviews?.length || 0 }})</span>
           </div>
-          
+
           <div class="product-price">{{ item?.number }} ₽</div>
-          
+
           <button @click="router.push({ name: 'subject', params: { id: item.id } })">Перейти на товар</button>
           <button v-if="users.isAdmin.value" @click="users.addToCartWithNotification(item)">Добавить в корзину</button>
         </div>
@@ -80,7 +80,6 @@ const router = useRouter();
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.4;
-  color: var(--text-primary);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -94,36 +93,15 @@ const router = useRouter();
 }
 .reviews-count {
   font-size: 0.75rem;
-  color: var(--text-secondary);
 }
 .product-price {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--button);
   margin: 8px 0 4px;
 }
 button {
   padding: 8px 12px;
-  border: none;
-  border-radius: 40px;
   font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
   margin-top: 4px;
-}
-button:first-of-type {
-  background: var(--info);
-  color: white;
-}
-button:first-of-type:hover {
-  background: var(--info-hover);
-}
-button:last-of-type {
-  background: var(--button);
-  color: var(--button-text);
-}
-button:last-of-type:hover {
-  background: var(--button-hover);
 }
 </style>

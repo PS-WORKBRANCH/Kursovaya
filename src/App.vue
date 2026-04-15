@@ -117,152 +117,102 @@ const checklog = computed(() => {
 
 <style scoped>
 .logo img {
-    max-height: 90px;
+  max-height: 90px;
 }
-
 .storre img {
-    max-height: 20px;
+  max-height: 20px;
 }
-
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    top: 0;
-    position: sticky;
-    min-width: 100vw;
-    border-bottom: 1px solid black;
-    box-shadow: 10px 1px 10px 1px black;
-    background-color: #161616;
-    z-index: 999;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  min-height: 7%;
+  margin: 0;
+  z-index: 999;
 }
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-
-}
-
-
 input {
-    border-radius: 10px;
-    height: 28px;
-    text-align: center;
-    gap: 0;
-    width: 600px;
-    text-align: start;
-    padding: 5px;
+  border-radius: 10px;
+  height: 28px;
+  width: 600px;
+  text-align: start;
+  padding: 5px;
 }
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    min-height: 7%;
-    margin: 0 0;
-
-}
-
 .main {
-    flex-grow: 2;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex-grow: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 button {
-    margin: 10px;
+  margin: 10px;
 }
-
 footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    min-height: 7%;
-    margin: 0 0;
-    background-color: #161616;
-    color: white;
-    text-align: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 7%;
+  margin: 0;
+  text-align: left;
 }
-
 .flex {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
 }
-
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .store-link {
-    position: relative;
+  position: relative;
 }
-
-.storre {
-    position: relative;
-}
-
 .cart-badge {
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    background: var(--button);
-    color: #000;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 0.7rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .toast {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: var(--accent);
-    color: white;
-    padding: 12px 24px;
-    border-radius: 40px;
-    font-weight: 600;
-    z-index: 999;
-    animation: fadeInUp 0.3s ease;
-    box-shadow: var(--shadow-md);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  z-index: 999;
+  animation: fadeInUp 0.3s ease;
 }
-
-.toast.success {
-    background: green;
-    color: #000;
-}
-
-.toast.error {
-    background: var(--danger);
-}
-
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .center input {
+    width: 90%;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 </style>

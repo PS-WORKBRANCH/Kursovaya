@@ -88,7 +88,6 @@ const router = useRouter();
   align-items: center;
   gap: 20px;
 }
-
 .users-content {
   display: flex;
   justify-content: space-around;
@@ -97,35 +96,29 @@ const router = useRouter();
   min-height: 300px;
   padding: 2.5rem;
 }
-
 .picture img {
   width: 40px;
 }
-
 .orders-section {
   width: 100%;
   max-width: 600px;
   padding: 1.5rem;
 }
-
 .order-card {
   padding: 1rem;
   margin-bottom: 1rem;
 }
-
 .order-header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
 }
-
 .order-item {
   display: flex;
   justify-content: space-between;
   margin: 0.25rem 0;
 }
-
 .order-total {
   text-align: right;
   margin-top: 0.5rem;

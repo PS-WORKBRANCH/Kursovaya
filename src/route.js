@@ -11,7 +11,7 @@ import checkout from './components/checkout.vue'
 import profile from './components/profile.vue'
 import user from './components/user.vue'
 import character from './components/character.vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import useUsers from './composables/useUsers'
 
 const routes = [
@@ -34,7 +34,7 @@ const routes = [
 ]
 
 export const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes
 })
 

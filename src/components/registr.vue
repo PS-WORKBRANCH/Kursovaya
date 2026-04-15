@@ -203,50 +203,41 @@ function checkRegister() {
   min-height: calc(100vh - 80px);
   padding: 2rem 0;
 }
-
 .registr-card {
   width: 100%;
   max-width: 600px;
   min-width: 400px;
   padding: 2.5rem;
 }
-
 .form-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 .form-group {
   margin-bottom: 0.5rem;
 }
-
 .form-label {
   display: block;
   margin-bottom: 0.5rem;
 }
-
 .form-input {
   width: 100%;
   padding: 0.75rem 1rem;
 }
-
 .error-message {
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
-
 .form-info {
   margin: 1rem 0;
   padding: 0.75rem;
   text-align: center;
 }
-
 .submit-btn {
   width: 100%;
   margin-top: 1rem;
 }
-
 @media (max-width: 768px) {
   .registr-card {
     padding: 1.5rem;

@@ -185,15 +185,12 @@ function closeModal() {
 </template>
 
 <style scoped>
-/* Стили (оставляем как были ранее, либо можно добавить минимальные, т.к. глобальные стили уже есть) */
 .checkout-container {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
 .checkout-card {
-  background: var(--bg-card);
-  border-radius: 28px;
   padding: 2rem;
 }
 .checkout-title {
@@ -211,18 +208,6 @@ function closeModal() {
 .form-input {
   width: 100%;
   padding: 0.75rem;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  color: var(--text-primary);
-}
-.form-input.error {
-  border-color: var(--danger);
-}
-.error-message {
-  color: var(--danger);
-  font-size: 0.85rem;
-  margin-top: 0.25rem;
 }
 .row {
   display: flex;
@@ -233,50 +218,13 @@ function closeModal() {
 }
 .submit-btn, .back-btn {
   width: 100%;
-  padding: 0.75rem;
   margin-top: 1rem;
-  border-radius: 40px;
-  font-weight: 700;
-  cursor: pointer;
-}
-.submit-btn {
-  background: var(--accent);
-  color: white;
-  border: none;
-}
-.back-btn {
-  background: var(--info);
-  color: white;
-  border: none;
-}
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(8px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
 }
 .modal-content {
-  background: var(--bg-card);
-  border-radius: 28px;
-  padding: 2rem;
-  text-align: center;
   max-width: 400px;
-  border-top: 4px solid var(--accent);
+  text-align: center;
 }
 .modal-btn {
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 40px;
   margin-top: 1rem;
-  cursor: pointer;
 }
 </style>
