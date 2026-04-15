@@ -123,4 +123,84 @@ const router = useRouter();
   text-align: right;
   margin-top: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .profile-container {
+    width: 100%;
+    padding: 0 16px;
+    gap: 16px;
+  }
+  .users-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  .picture img {
+    width: 60px;
+    margin-bottom: 12px;
+  }
+  .info {
+    width: 100%;
+  }
+  .info .flex {
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .orders-section {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  .order-card {
+    padding: 0.8rem;
+  }
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .order-item-name {
+    font-size: 0.9rem;
+  }
+  .order-item-qty, .order-item-price {
+    font-size: 0.85rem;
+  }
+  .order-delivery-info {
+    padding: 8px;
+  }
+  .order-total {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .users-content {
+    padding: 1rem;
+  }
+  .info .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .info h2 {
+    font-size: 1rem;
+    min-width: 80px;
+  }
+  .order-number {
+    font-size: 1rem;
+  }
+  .order-date {
+    font-size: 0.7rem;
+  }
+  .order-total {
+    font-size: 1rem;
+  }
+}
 </style>

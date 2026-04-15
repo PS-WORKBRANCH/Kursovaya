@@ -131,4 +131,89 @@ main {
   padding: 20px;
   text-align: start;
 }
+
+/* ========== АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И МОБИЛЬНЫХ ========== */
+@media (max-width: 1024px) {
+  .blur {
+    padding: 80px 20px;
+  }
+  .blur h1 {
+    font-size: 2rem;
+    margin-top: 100px;
+  }
+  .container {
+    max-width: 90%;
+    gap: 15px;
+  }
+  .card {
+    width: 220px;
+  }
+  .podbor {
+    min-width: auto;
+    width: 90%;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .podbor h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover {
+    min-height: 300px;
+  }
+  .blur {
+    padding: 50px 15px;
+  }
+  .blur h1 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .card {
+    width: 90%;
+    max-width: 280px;
+  }
+  .podbor {
+    width: 95%;
+    padding: 20px;
+  }
+  .podbor h1 {
+    font-size: 1.5rem;
+  }
+  .podbor h5 {
+    font-size: 0.9rem;
+  }
+  .podbor button {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blur h1 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  .card h5 {
+    font-size: 0.9rem;
+  }
+  .card img {
+    width: 100%;
+    max-width: 180px;
+  }
+  .podbor h1 {
+    font-size: 1.2rem;
+  }
+  .podbor h5 {
+    font-size: 0.8rem;
+  }
+}
 </style>
