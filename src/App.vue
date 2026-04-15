@@ -85,29 +85,7 @@ const checklog = computed(() => {
                 <h5>СПБ, ул.Руставели 33, кабинет 310</h5>
                 <h5>ПН-ПТ 12:00 - 19:00; СБ 12:00 - 18:00</h5>
             </div>
-            <div class="info">
-                <h5>Комплектующие</h5>
-                <ul>
-                    <li><a href="">Видеокарты</a></li>
-                    <li><a href="">Процессоры</a></li>
-                    <li><a href="">Материнские платы</a></li>
-                    <li><a href="">Оперативная память</a></li>
-                    <li><a href="">Блоки питания</a></li>
-                    <li><a href="">Охлаждение</a></li>
-                    <li><a href="">Корпуса</a></li>
-                    <li><a href="">Диски SSD</a></li>
-                </ul>
-            </div>
-            <div class="info">
-                <h5>Для покупателей</h5>
-                <ul>
-                    <li><a href="">О комапнии</a></li>
-                    <li><a href="">Оплата и доставка</a></li>
-                    <li><a href="">Сборка ПК</a></li>
-                    <li><a href="">Отзывы</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </div>
+            
         </footer>
     </div>
 
@@ -154,7 +132,8 @@ button {
 }
 footer {
   display: flex;
-  justify-content: space-around;
+  padding: 20px;
+  justify-content: start;
   align-items: center;
   width: 100%;
   min-height: 7%;

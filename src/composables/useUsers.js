@@ -1,4 +1,3 @@
-// useUsers.js (полная версия)
 import { computed, ref } from "vue";
 
 const auth = ref(false)
@@ -114,8 +113,6 @@ function calculateCartTotal() {
 
 function placeOrder(orderData) {
     if (!isAdmin.value) return false;
-    
-    // Создаём объект заказа
     const newOrder = {
         id: Date.now(),
         date: new Date().toLocaleString(),
@@ -123,21 +120,13 @@ function placeOrder(orderData) {
         total: calculateCartTotal(),
         delivery: { ...orderData }
     };
-    
     if (!isAdmin.value.orders) isAdmin.value.orders = [];
     isAdmin.value.orders.push(newOrder);
-    
-    // Очищаем корзину
     isAdmin.value.tovars = {};
-    
-    // Сохраняем изменения в userList
     const index = userList.value.findIndex(u => u.id === isAdmin.value.id);
     if (index !== -1) userList.value[index] = isAdmin.value;
-    
-    // Сохраняем в localStorage
     saveUserList();
-    saveAuth();  // если есть такая функция
-    
+    saveAuth();
     return true;
 }
 
@@ -158,10 +147,6 @@ function showNotification(message, type = 'success') {
 }
 
 function addToCartWithNotification(product) {
-    if (!product) {
-        console.error('Товар не передан в addToCartWithNotification');
-        return;
-    }
     addToCart(product);
     showNotification('Товар добавлен в корзину');
 }
@@ -170,7 +155,6 @@ const cartItemCount = computed(() => {
     if (!isAdmin.value || !isAdmin.value.tovars) return 0;
     return Object.values(isAdmin.value.tovars).reduce((sum, item) => sum + item.quantity, 0);
 });
-
 
 loadUserList()
 loadAuth()

@@ -31,11 +31,13 @@ function updateQuantity(productId, delta) {
 }
 
 function saveCartToUser() {
-  // Обновляем запись пользователя в userList и сохраняем
+  // Обновляем запись пользователя в общем списке
   const index = users.userList.value.findIndex(u => u.id === users.isAdmin.value.id);
   if (index !== -1) users.userList.value[index] = users.isAdmin.value;
+  
+  // Сохраняем в localStorage
   localStorage.setItem('userList', JSON.stringify(users.userList.value));
-  users.saveAuth(); // если нужна синхронизация isAdmin
+  localStorage.setItem('authUser', JSON.stringify(users.isAdmin.value));
 }
 
 function totalPrice() {
@@ -73,6 +75,7 @@ function totalPrice() {
     </div>
   </div>
 </template>
+
 
 <style scoped>
 .cart-container {

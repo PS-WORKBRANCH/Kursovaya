@@ -39,7 +39,7 @@ function edit() {
         else {
             text.value = '';
 
-            if (newSubjectData.number <= 0) {
+            if (newSubjectData.number <= 0 || newSubjectData.number >= 99999999) {
                 text_num.value = 'Цена должна быть больше 0!!!';
                 text.value = ''
             } else {

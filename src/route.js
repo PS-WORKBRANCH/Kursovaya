@@ -17,8 +17,8 @@ import useUsers from './composables/useUsers'
 const routes = [
     { path: '/', component: welcome, name: 'welcome' },
     { path: '/catalog', component: catalog, name: 'catalog' },
-    { path: '/auto', component: auto, name: 'auto' },
-    { path: '/registr', component: registr, name: 'registr' },
+    { path: '/auto', component: auto, name: 'auto', meta: { needAuth: false } },
+    { path: '/registr', component: registr, name: 'registr', meta: { needAuth: false } },
     { path: '/store', component: store, name: 'store', meta: { needAuth: true } },
     { path: '/checkout', component: checkout, name: 'checkout', meta: { needAuth: true } },
     { path: '/profile/:id([0-9])*', component: profile, name: 'profile', meta: { needAuth: true } },
