@@ -22,7 +22,7 @@ const checklog = computed(() => {
         <header>
             <RouterLink :to="{ name: 'welcome' }">
                 <div class="logo center">
-                    <img src="./assets/logo.webp" alt="">
+                    <img src="./assets/logo.jpg" alt="">
                     <h2>
                         BuyPC
                     </h2>
@@ -30,9 +30,7 @@ const checklog = computed(() => {
             </RouterLink>
 
 
-            <div class="center">
-                <input type="text" placeholder="Поиск товаров...">
-            </div>
+
 
 
 
@@ -118,6 +116,8 @@ const checklog = computed(() => {
 <style scoped>
 .logo img {
   max-height: 90px;
+  border-radius: 20%;
+  margin: 2%;
 }
 .storre img {
   max-height: 20px;

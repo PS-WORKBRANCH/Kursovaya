@@ -16,25 +16,34 @@ const router = useRouter();
   <div v-if="users.isAdmin.value" class="profile-container">
     <div class="users-content">
       <div class="picture">
-        <img src="../assets/ava.jpg" alt="">
+        <img src="../assets/userava.jpg" alt="">
+        <h3>{{ users.isAdmin.value.login }}</h3>
       </div>
       <div class="info">
-        <div class="flex">
-          <h2>Логин</h2>
-          {{ users.isAdmin.value.login }}
+        <!-- <div class="flex">
+          <h4>Логин:</h4>
+          
         </div>
+          <hr> -->
+
         <div class="flex">
-          <h2>Почта</h2>
-          {{ users.isAdmin.value.email }}
+          <h4>Почта:</h4>
+          <h3>{{ users.isAdmin.value.email }}</h3>
         </div>
+          <hr>
+
         <div class="flex">
-          <h2>ФИО</h2>
-          {{ users.isAdmin.value.lastName }} {{ users.isAdmin.value.firstName }} {{ users.isAdmin.value.middleName }}
+          <h4>ФИО:</h4>
+          <h3>{{ users.isAdmin.value.lastName }} {{ users.isAdmin.value.firstName }} {{ users.isAdmin.value.middleName }}</h3>
         </div>
+          <hr>
+        
         <div class="flex">
-          <h2>Телефон</h2>
-          {{ users.isAdmin.value.phone || '-' }}
+          <h4>Телефон</h4>
+          <h3>{{ users.isAdmin.value.phone || '-' }}</h3>
         </div>
+          <hr>
+
       </div>
     </div>
 
@@ -91,14 +100,25 @@ const router = useRouter();
 .users-content {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  max-width: 400px;
+  gap: 25px;
+  width: 200%;
+  max-width: 600px;
   min-height: 300px;
   padding: 2.5rem;
 }
 .picture img {
-  width: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
 }
+
+.picture{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .orders-section {
   width: 100%;
   max-width: 600px;
@@ -202,5 +222,8 @@ const router = useRouter();
   .order-total {
     font-size: 1rem;
   }
+}
+hr{
+  margin-bottom: 10%;
 }
 </style>
