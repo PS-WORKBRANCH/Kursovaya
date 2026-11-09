@@ -73,6 +73,7 @@ function checkLogin() {
     </div>
 
   </div>
+  </div>
 
   <div v-if="errors.general" class="form-message">
     {{ errors.general }}
