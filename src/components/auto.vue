@@ -81,10 +81,11 @@ function checkLogin() {
   <button class=" submit-btn" @click="checkLogin()">
     Войти
   </button>
-  </div>
   <div>
     <h4 class="form-message">Для входа можно использовать admin/admin</h4>
   </div>
+  </div>
+
   </div>
 
 </template>
