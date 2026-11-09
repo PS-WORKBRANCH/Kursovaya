@@ -1,5 +1,43 @@
-# Vue 3 + Vite
+# Курсовой проект: Интернет-магазин на Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Проект представляет собой Single Page Application (SPA) веб-ресурс электронной коммерции, разработанный в рамках курсовой работы на 3 курсе. Фокус проекта — реализация чистой клиентской логики и интерактивного UI.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+##  Стек технологий
+* **Frontend:** Vue.js 3 (Composition API, `<script setup>`)
+* **Роутинг:** Vue Router 4 (динамическая навигация без перезагрузки страниц)
+* **Интерфейс:** HTML5, CSS3 (чистая блочная верстка интерфейса)
+* **Хранение данных:** LocalStorage (имитация базы данных, сохранение состояния сессий и корзины)
+* **Сборка проекта:** Vite
+
+##  Функционал приложения
+* **Каталог товаров:** Вывод списка товаров, динамическая фильтрация и поиск.
+* **Интерактивная корзина:** Добавление/удаление товаров, пересчет общей стоимости в реальном времени, сохранение выбранных позиций при перезагрузке страницы (через LocalStorage).
+* **Система аккаунтов:** Эмуляция регистрации и авторизации пользователей с сохранением сессии.
+* **Панель администратора:** Защищенный интерфейс для базового управления товарами на стороне клиента.
+
+##  Локальный запуск проекта
+
+Для запуска проекта на локальной машине выполните следующие команды:
+
+1. Клонировать репозиторий:
+```bash
+git clone https://github.com/PS-WORKBRANCH/Kursovaya.git
+```
+
+2. Перейти в папку с проектом:
+```bash
+cd Kursovaya
+```
+
+3. Установить зависимости:
+```bash
+npm install
+```
+
+4. Запустить локальный сервер для разработки:
+```bash
+npm run dev
+```
+
+##  Демо (GitHub Pages)
+Проект развернут и доступен онлайн: https://ps-workbranch.github.io/Kursovaya/#/
