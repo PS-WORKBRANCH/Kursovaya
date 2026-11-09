@@ -73,7 +73,6 @@ function checkLogin() {
     </div>
 
   </div>
-  </div>
 
   <div v-if="errors.general" class="form-message">
     {{ errors.general }}
@@ -86,6 +85,8 @@ function checkLogin() {
   <div>
     <h4 class="form-message">Для входа можно использовать admin/admin</h4>
   </div>
+  </div>
+
 </template>
 
 
