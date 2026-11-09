@@ -71,6 +71,7 @@ function checkLogin() {
       <input type="password" v-model="password" placeholder="Введите пароль" class="form-input" ">
         <div v-if="errors.password" class="error-message">{{ errors.password }}
     </div>
+
   </div>
 
   <div v-if="errors.general" class="form-message">
@@ -81,6 +82,8 @@ function checkLogin() {
     Войти
   </button>
   </div>
+  <div>
+    <h4 class="form-message">Для входа можно использовать admin/admin</h4>
   </div>
 </template>
 
@@ -92,31 +95,38 @@ function checkLogin() {
   align-items: center;
   min-height: calc(100vh - 390px);
 }
+
 .auth-card {
   width: 100%;
   max-width: 400px;
   padding: 2.5rem;
 }
+
 .form-group {
   margin-bottom: 1.5rem;
 }
+
 .form-label {
   display: block;
   margin-bottom: 0.5rem;
 }
+
 .form-input {
   width: 100%;
   padding: 0.75rem 1rem;
 }
+
 .error-message {
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
+
 .form-message {
   padding: 0.75rem;
   text-align: center;
   margin-bottom: 1rem;
 }
+
 .submit-btn {
   width: 100%;
   margin-bottom: 1.5rem;
